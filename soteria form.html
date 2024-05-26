@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soteria form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <div id="navbar">
+        <a href="#">Home</a>
+        <a href="/C:\Users\Kunal\Desktop\Kavya Reddy\service partner.html">Service</a>
+        <a href="/C:\Users\Kunal\Desktop\Kavya Reddy\service partner.html">Project</a>
+        <a href="/C:\Users\Kunal\Desktop\Kavya Reddy\service partner.html">Guarding</a>
+        <a href="/C:\Users\Kunal\Desktop\Kavya Reddy\service partner.html">Auction</a>
+        <a href="/C:\Users\Kunal\Desktop\Kavya Reddy\service partner.html">Training</a>
+        <a href="/C:\Users\Kunal\Desktop\Kavya Reddy\service partner.html">Contact Us</a>
+        
+    
+    
+    
+      </div>
+     
+  
+
+       <div id="container">
+    <font color="">
+        <Center>
+        <h1 style="margin: 10px;;">Bidder Check list Form  </h1><br><br>
+        <body bgcolor="">
+        
+        
+        <form method="post" action="https://script.google.com/macros/s/AKfycbyzwk88NpArNwUPcBVRcyGP2yE4tUTm5myq_-D1GMtLqDZoB6HaoqPiz8fnv2mDVyzfUg/exec">
+        
+        BMCode      : <input type="number"Name="BMCode"><br><br>
+        Vendor Name : <input type="text"placeholder="eg-:soteria Vprotect Zicom" name="Vendor Name" ><br><br> 
+        Date : <input type="date"name="Date"><br><br>
+        In Time : <input type="time"Name="In Time"><br><br>
+        OutTime : <input type="time"Name="OutTime"><br><br>
+        <button><input type="submit"value="submit" style="color:rgb(20, 20, 19); background-color: rgb(224, 223, 238);"></button>
+        </Center>
+        </form>
+        
+        
+        </font> 
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyzwk88NpArNwUPcBVRcyGP2yE4tUTm5myq_-D1GMtLqDZoB6HaoqPiz8fnv2mDVyzfUg/exec'
+        const form = document.forms['formName']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
